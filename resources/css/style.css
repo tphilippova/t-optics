@@ -1,0 +1,285 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-image: url("../img/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+  nav.container {
+    max-width: 100%;
+  }
+  .moto {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .moto h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    background-position: 20%;
+    height: 17rem;
+    padding-top: 0;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav .company {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+nav .menu {
+  display: inline;
+  padding: 0 1rem;
+}
+
+nav .mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  nav .menu {
+    display: none;
+  }
+  nav .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  nav .menu {
+    display: none;
+  }
+  nav .company span {
+    display: none;
+  }
+  nav .mobile-menu {
+    display: block;
+  }
+}
+
+nav ul {
+  margin-right: 1rem;
+}
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+header .flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moto {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0;
+  }
+  nav.container {
+    max-width: 100%;
+  }
+  .moto {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .moto h1 {
+    font-size: 1.33rem;
+  }
+}
+
+
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    padding-top: 0;
+    background-position: 20%;
+  }
+  nav.container {
+    max-width: 100%;
+  }
+  .moto {
+    width: 100%;
+    margin-top: 9rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    margin-right: 0;
+  }
+  .moto h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Main Section */
+.main-section {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .main-section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+  .service img {
+    padding: 0.77rem;
+  }
+}
+
+.service img.paper {
+  width: 3.5rem;
+}
+
+.service img.ruler {
+  width: 5rem;
+}
+
+.service img.truck {
+  width: 5rem;
+}
+
+/* Info Section */
+.info-section {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .info-section {
+    display: block;
+  }
+  .info {
+    width: 100%;
+  }
+
+  .info .title {
+    max-width: none;
+    width: 100%;
+    margin-right: 0;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .info p {
+    padding: 1rem;
+    font-size: 0.77rem;
+  }
+}
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 560px) {
+  footer span {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
